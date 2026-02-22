@@ -1,0 +1,10 @@
+#Modul: Analisis Ekspresi Gen Kanker Paru 
+#Dataset: GSE10072 (Lung Adenocarcinoma vs Normal)
+#Platform: Microarray (Affymetrix GPL96)
+#Tujuan: Mengidentifikasi Differentially Expressed Genes (DEG) 
+
+#Pendahuluan
+
+Metode
+Hasil dan Interpretasi
+Kesimpulan
