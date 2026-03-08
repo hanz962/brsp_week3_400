@@ -3,8 +3,34 @@
 #Platform: Microarray (Affymetrix GPL96)
 #Tujuan: Mengidentifikasi Differentially Expressed Genes (DEG) 
 
+Gene expression signature of cigarette smoking and its role in lung
+adenocarcinoma development and survival
+
 #Pendahuluan
+Kanker paru-paru merupakan salah satu jenis kanker yang banyak ditemui. Mekanisme
+molekuler terkait hubungan antara aktivitas merokok dan paru-paru masih belum banyak
+dipelajari. Penelitian ini bertujuan untuk mengidentifikasi gen dalam paru-paru yang berubah
+tingkat ekspresinya akibat kebiasaan merokok yang berperan dalam karsinogenesis dan
+mengakibatkan kanker paru-paru.
 
 #Metode
-#Hasil dan Interpretasi
-#Kesimpulan
+Penelitian menggunakan teknik microarray dan terdiri dari dua perlakuan, yaitu
+adenokarsinoma paru akibat rokok dan paru-paru sehat sebagai pembanding. Analisis DEG
+menggunakan dataset ekspresi gen sekunder dari database Gene Expression Omnibus (GEO)
+dengan nomor akses GSE10072. Data dianalisis dengan bahasa pemrograman R dan Bioconductor limma untuk analisis statistik. Gen dianggap sebagai DEG jika memiliki nilai p-
+value < 0.01. Data hasil analisis berbasis Probe ID dipetakan menggunakan basis data hgu133a.db. 
+Visualisasi data menggunakan umap, volcano plot, dan heat map.
+
+Hasil dan Interpretasi
+Berdasarkan hasil analisis, terdapat 50 DEG yang mengalami upregulation. Transformasi log2
+menunjukkan bahwa distribusi intensitas antar sampel sudah setara dan siap dibandingkan.
+
+Berdasarkan hasil dari umap plot, sampel Kanker Paru (Adenocarcinoma) dan sampel Normal
+membentuk kluster yang terpisah secara jelas. Pemisahan yang tegas menunjukkan bahwa perbedaan
+transkriptomik antar kedua grup sangat signifikan. Volcano plot menunjukkan sebaran gen 
+yang mengalami peningkatan ekspresi (Up-regulated) dan penurunan ekspresi (Down-regulated)
+
+Kesimpulan
+Terdapat perbedaan ekspresi gen antara perlakuan adenokarsinoma paru dan kontrol (paru-paru
+sehat non perokok). Beberapa gen yang mengalami upregulation dapat mengacaukan pola
+pembelahan sel mitosis sehingga menyebabkan kanker paru-paru
